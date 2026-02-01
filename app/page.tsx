@@ -148,34 +148,64 @@ export default function Home() {
   </div>
  </div>
 
-    <div className="flex flex-col md:flex-row items-center justify-center mt-12 gap-8 px-4">
-  {/* Sección izquierda: Quiénes somos */}
-  <div className="md:w-1/2">
-    <h4 className="text-center md:text-left text-gray-800 font-sans">Quiénes somos</h4>
-    <span className="block mt-4 text-center md:text-left text-gray-600">Nuestra Experiencia</span>
-    <p className="mt-2 text-center md:text-left text-gray-600">
-      Con más de 10 años de experiencia en el desarrollo de software administrativo y contable, hemos ayudado a numerosas empresas a
-      optimizar sus procesos y mejorar su eficiencia operativa. Nuestro equipo de expertos está comprometido con la innovación y la excelencia,
-      brindando soluciones tecnológicas que se adaptan a las necesidades cambiantes del mercado.
+        <div className="max-w-7xl mx-auto px-6 py-20">
+  
+  {/* Encabezado */}
+  <div className="text-center max-w-4xl mx-auto">
+    <span className="text-sm text-gray-500 uppercase tracking-wide">
+      Quiénes somos
+    </span>
+    <h2 className="mt-2 text-4xl font-bold text-gray-800">
+      Nuestra <span className="text-orange-500">Experiencia</span>
+    </h2>
+
+    <p className="mt-6 text-gray-600 leading-relaxed">
+      <strong>Más de 30 años de experiencia</strong> en el desarrollo de aplicaciones para tu negocio.
+      <strong> Más de 200 colaboradores</strong> comprometidos con el éxito de la pequeña, mediana y
+      gran empresa en Colombia. <strong>Más de 15.000 empresas</strong> satisfechas en
+      <strong> más de 200 municipios</strong> a lo largo y ancho del país.
     </p>
   </div>
 
-  {/* Imagen al centro/derecha */}
-  <div className="md:w-1/2">
-    <img src="/experiencia.png" alt="Nuestra experiencia" className="mx-auto md:mx-0 mt-6 w-full max-w-md" />
+  {/* Contenido inferior */}
+  <div className="mt-20 grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
+    
+    {/* Texto izquierdo */}
+    <div>
+      <span className="text-sm text-gray-500">
+        Cómo lo hacemos
+      </span>
+      <h3 className="mt-2 text-3xl font-semibold text-gray-800">
+        La mejor <span className="text-orange-500">tecnología</span>
+      </h3>
+
+      <ul className="mt-6 space-y-4 text-gray-600 list-disc list-inside">
+        <li>
+          Aplicaciones 100% web para que operes tu negocio desde Colombia o desde cualquier lugar.
+        </li>
+        <li>
+          Software parametrizable a tus necesidades y procesos.
+        </li>
+        <li>
+          Servicio al cliente comprometido y conocedor. Todos nuestros asesores son colaboradores
+          directos expertamente entrenados.
+        </li>
+      </ul>
+    </div>
+
+    {/* Imagen derecha */}
+    <div className="relative flex justify-center">
+      <img
+        src="12rbhp9.jpg"
+        alt="Plataforma en dispositivos"
+        className="w-full max-w-xl object-contain"
+      />
+    </div>
+
   </div>
 </div>
 
-{/* Sección inferior: Cómo lo hacemos */}
-<div className="mt-12 px-4">
-  <h4 className="text-center text-gray-800 font-sans">Cómo lo hacemos</h4>
-  <span className="block mt-4 text-center text-gray-600">La mejor tecnología</span>
-  <ul className="list-disc list-inside mt-4 text-gray-600">
-    <li>Aplicaciones 100% web para que operes tu negocio desde Colombia o desde cualquier lugar.</li>
-    <li>Software parametrizable a tus necesidades y procesos.</li>
-    <li>Servicio al cliente comprometido y conocedor. Todos nuestros asesores son colaboradores directos expertamente entrenados.</li>
-  </ul>
-</div>
+
 
   <div className=' my-12 px-4'>
     <div className=" carousel slide relative" data-te-carousel-init data-te-carousel-slide>
