@@ -70,28 +70,32 @@ export default function Home() {
     <div>
       <Navbar />
 
-      <section className='bg-gray-100 py-12'>
-        <div className='container mx-auto px-4'>
-          <h2 className='text-3xl font-bold text-center mb-8'>Software administrativo y contable de gestion empresarial</h2>
-          <p className='text-center text-gray-700 mb-8'>
-            Software agil y robusto{' '}
-            <span className='text-blue-600 font-semibold'>
-              para hacer{' '}
-              <span className='text-green-600 font-semibold'>
-                mas eficiente tu negocio
-              </span>
-            </span>
-          </p>
-        </div>
-      </section>
+    <section className="relative w-full">
+  {/* Imagen que ocupa todo el ancho */}
+  <img
+    src="image1.1.png"
+    alt="Características del software"
+    className="w-full h-[600px] object-cover"
+  />
 
-      <div className='bg-white py-12'>
-        <div className='container mx-auto px-4'>
-          <span className='block mb-8'>
-            <img src='/features.png' alt='Características del software' className='mx-auto' />
-          </span>
-        </div>
-      </div>
+  {/* Texto superpuesto */}
+  <div className="absolute inset-0 flex flex-col items-center justify-center text-center px-4">
+    <h2 className="text-3xl font-bold text-black mb-4 drop-shadow-lg">
+      Software administrativo y contable de gestión empresarial
+    </h2>
+    <p className="text-lg text-black drop-shadow-md">
+      Software ágil y robusto{" "}
+      <span className="text-blue-300 font-semibold">
+        para hacer{" "}
+        <span className="text-green-300 font-semibold">
+          más eficiente tu negocio
+        </span>
+      </span>
+    </p>
+  </div>
+</section>
+
+
 
       <div className='py-12'>
         <h3 className='text-2xl font-bold text-center mb-12'>¿Por qué elegir nuestro software?</h3>

@@ -12,13 +12,15 @@ const Navbar: React.FC = () => {
       <nav className="max-w-7xl mx-auto px-4 lg:px-6">
         <div className="flex h-16 items-center justify-between">
           
-          {/* LOGO */}
-          <Link
-            href="/"
-            className="text-xl font-bold text-slate-900 tracking-tight"
-          >
-            Metrq<span className="text-blue-600">360</span>
-          </Link>
+        {/* LOGO */}
+        <Link href="/" className="flex items-center">
+      <img 
+        src="Logo_metriq_slogan-03.png" 
+        alt="Metrq360 Logo" 
+         className="w-40 h-auto ml-0"  // quiero que este mas a la izquierda
+  />
+        </Link>
+
 
           {/* DESKTOP MENU */}
           <ul className="hidden lg:flex items-center gap-6 text-sm font-medium text-slate-700">
