@@ -51,6 +51,7 @@
     "recharts": "^2.10.3",
     "sonner": "^1.7.2",
     "tailwind-merge": "^2.2.2",
+    "tw-elements": "^2.0.0",
     "vaul": "^1.1.2"
   },
   "devDependencies": {

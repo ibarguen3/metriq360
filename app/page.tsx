@@ -144,14 +144,141 @@ export default function Home() {
   </div>
  </div>
 
- <section className='bg-gray-100 py-12'>
-        <div className='container mx-auto px-4'>
-        
+    <div className="flex flex-col md:flex-row items-center justify-center mt-12 gap-8 px-4">
+  {/* Sección izquierda: Quiénes somos */}
+  <div className="md:w-1/2">
+    <h4 className="text-center md:text-left text-gray-800 font-sans">Quiénes somos</h4>
+    <span className="block mt-4 text-center md:text-left text-gray-600">Nuestra Experiencia</span>
+    <p className="mt-2 text-center md:text-left text-gray-600">
+      Con más de 10 años de experiencia en el desarrollo de software administrativo y contable, hemos ayudado a numerosas empresas a
+      optimizar sus procesos y mejorar su eficiencia operativa. Nuestro equipo de expertos está comprometido con la innovación y la excelencia,
+      brindando soluciones tecnológicas que se adaptan a las necesidades cambiantes del mercado.
+    </p>
+  </div>
+
+  {/* Imagen al centro/derecha */}
+  <div className="md:w-1/2">
+    <img src="/experiencia.png" alt="Nuestra experiencia" className="mx-auto md:mx-0 mt-6 w-full max-w-md" />
+  </div>
+</div>
+
+{/* Sección inferior: Cómo lo hacemos */}
+<div className="mt-12 px-4">
+  <h4 className="text-center text-gray-800 font-sans">Cómo lo hacemos</h4>
+  <span className="block mt-4 text-center text-gray-600">La mejor tecnología</span>
+  <ul className="list-disc list-inside mt-4 text-gray-600">
+    <li>Aplicaciones 100% web para que operes tu negocio desde Colombia o desde cualquier lugar.</li>
+    <li>Software parametrizable a tus necesidades y procesos.</li>
+    <li>Servicio al cliente comprometido y conocedor. Todos nuestros asesores son colaboradores directos expertamente entrenados.</li>
+  </ul>
+</div>
+
+  <div className=' my-12 px-4'>
+    <div className=" carousel slide relative" data-te-carousel-init data-te-carousel-slide>
+  <div className="relative w-full overflow-hidden">
+    <div className="hidden" data-te-carousel-item>
+      <img src="/img1.jpg" className="block w-full" />
+    </div>
+    <div className="hidden" data-te-carousel-item>
+      <img src="/img2.jpg" className="block w-full" />
+    </div>
+  </div>
+  <button data-te-slide="prev">‹</button>
+  <button data-te-slide="next">›</button>
+</div>
+
+    </div>
+
+
+        <section className='bg-gray-100 py-12'>
+      <h2 className='text-2xl font-bold text-center mb-8'>Contáctanos</h2>
+      <div className='container mx-auto px-4 text-center'>
+        <form className="max-w-md mx-auto">
+      <input
+       type="text"
+        placeholder="Nombre completo"
+        className="w-full mb-4 p-2 border border-gray-300 rounded"
+       />
+
+      <input
+        type="email"
+        placeholder="Correo electrónico"
+        className="w-full mb-4 p-2 border border-gray-300 rounded"
+       />
+
+       <input
+        type="tel"
+        placeholder="Teléfono"
+        className="w-full mb-4 p-2 border border-gray-300 rounded"
+       />
+
+       <input
+       type="text"
+       placeholder="Nombre de la empresa"
+        className="w-full mb-4 p-2 border border-gray-300 rounded"
+        />
+
+       {/*  Tipo de empresa */}
+     <select
+      className="w-full mb-4 p-2 border border-gray-300 rounded"
+       defaultValue=""
+       >
+        <option value="" disabled>
+         Selecciona el tipo de empresa
+        </option>
+        <option value="pequena">Pequeña empresa</option>
+        <option value="mediana">Mediana empresa</option>
+        <option value="grande">Gran empresa</option>
+        <option value="startup">Startup</option>
+        </select>
+
+          <button
+          type="submit"
+        className="w-full bg-blue-600 text-white p-2 rounded hover:bg-blue-700 cursor-pointer"
+      >
+          Enviar
+          </button>
+           </form>
 
         </div>
 
- </section>
-     
+
+         <div className="max-w-md mx-auto mt-12 p-6 border border-gray-200 rounded-lg shadow">
+  <h3 className="text-xl font-semibold text-gray-800 mb-4 text-center">
+    Servicio al Cliente
+  </h3>
+
+  {/* Teléfono */}
+  <div className="flex items-center mb-3">
+    <span className="font-medium text-gray-700 w-40">Teléfono:</span>
+    <a href="tel:+576046043120" className="text-blue-600 hover:underline">
+      +57 (332) 604 312
+    </a>
+  </div>
+
+  {/* Correo comercial */}
+  <div className="flex items-center mb-3">
+    <span className="font-medium text-gray-700 w-40">E-mail:</span>
+    <a
+      href="mailto:comercial.pyme@loggro.com"
+      className="text-blue-600 hover:underline"
+    >
+      comercial.matriq360@gmail.com
+    </a>
+  </div>
+
+  {/* Soporte */}
+  <div className="flex items-center">
+    <span className="font-medium text-gray-700 w-40">Servicio al Cliente (Colombia):</span>
+    <span className="text-gray-600">soporte</span>
+  </div>
+</div>
+  <div className="text-center mt-6 text-gray-600">
+    <img src="/logo.png" alt="Logo de la empresa" className="mx-auto w-24" />
+    </div>
+
+
+     </section>
 
 
 
