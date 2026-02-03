@@ -8,8 +8,8 @@ const Navbar: React.FC = () => {
   const [mobileOpen, setMobileOpen] = useState(false);
 
   return (
-    <header className="w-full border-b bg-white sticky top-0 z-50">
-      <nav className="max-w-7xl mx-auto px-4 lg:px-6">
+    <header className="sticky top-0 z-50 w-full border-b bg-white">
+      <nav className="max-w-7xl mx-auto">
         <div className="flex h-16 items-center justify-between">
           
         {/* LOGO */}
@@ -17,7 +17,7 @@ const Navbar: React.FC = () => {
       <img 
         src="Logo_metriq_slogan-03.png" 
         alt="Metrq360 Logo" 
-         className="w-40 h-auto ml-0"  // quiero que este mas a la izquierda
+         className="w-40 h-auto px-4"  
   />
         </Link>
 
