@@ -214,3 +214,9 @@ tamaño-img{
 
 }
 
+.section-hero {
+  background-image: url('/public/image1.1.png');
+  background-size: cover;
+  background-position: center;
+}
+

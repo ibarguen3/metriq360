@@ -70,24 +70,24 @@ export default function Home() {
     <div>
       <Navbar />
 
-    <section className="relative w-full">
+    <section className=" section-hero">
   {/* Imagen que ocupa todo el ancho */}
   <img
     src="image1.1.png"
     alt="Características del software"
-    className="w-full h-[600px] object-cover"
+    className="w-full h-screen object-cover"
   />
 
   {/* Texto superpuesto */}
   <div className="absolute inset-0 flex flex-col items-center justify-center text-center px-4">
-    <h2 className="text-3xl font-bold text-black mb-4 drop-shadow-lg">
+    <h2 className="text-[#00225e] text-4xl font-bold mb-4 drop-shadow-lg">
       Software administrativo y contable de gestión empresarial
     </h2>
-    <p className="text-lg text-black drop-shadow-md">
+    <p className="text-[#00225e] text-4xl font-bold mb-4 drop-shadow-lg">
       Software ágil y robusto{" "}
       <span className="text-blue-300 font-semibold">
         para hacer{" "}
-        <span className="text-green-300 font-semibold">
+        <span className="text-[#029281] font-semibold">
           más eficiente tu negocio
         </span>
       </span>
@@ -97,27 +97,27 @@ export default function Home() {
 
 
 
-      <div className='py-12'>
-        <h3 className='text-2xl font-bold text-center mb-12'>¿Por qué elegir nuestro software?</h3>
+    <div className='py-12'>
+        <h3 className=' text-[#00225e] text-2xl font-bold text-center mb-1'>¿Por qué elegir nuestro software?</h3>
         
-        <div className="container mx-auto px-4 py-10">
-  <h2 className="text-3xl font-bold text-center mb-10 text-gray-800 font-sans">
-    Lo que hacemos - Nuestros productos
-  </h2>
+      <div className="container mx-auto px-4 py-1">
+      <h2 className="text-3xl font-bold text-center mb-10 text-[#00225e] font-sans">
+        Lo que hacemos - Nuestros productos
+      </h2>
 
-  {/* Grid para alinear horizontalmente */}
-  <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6">
-    {productos.map((producto, index) => (
-      <div
-        key={index}
-        className="bg-white rounded-lg shadow-md hover:shadow-xl transition-shadow flex flex-col"
-      >
-        {/* Header */}
-        <div className="bg-gradient-to-r from-blue-600 to-blue-700 p-4">
-          <h3 className="text-lg font-semibold text-white font-sans text-center">
-            {producto.nombre}
-          </h3>
-        </div>
+        {/* Grid para alinear horizontalmente */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6">
+        {productos.map((producto, index) => (
+          <div
+            key={index}
+          className="bg-white rounded-lg shadow-md hover:shadow-xl transition-shadow flex flex-col"
+           >
+            {/* Header */}
+              <div className="bg-gradient-to-r   from-[#00225e] to-[#029281] rounded-t-lg p-4 ">
+              <h3 className="text-lg font-semibold text-white font-sans text-center">
+              {producto.nombre}
+            </h3>
+            </div>
 
         {/* contenido */}
         <div className="p-4 flex flex-col h-full">
@@ -136,7 +136,7 @@ export default function Home() {
           <div className="mt-auto pt-4">
             <a
               href={producto.link}
-              className="block text-center bg-blue-600 text-white px-4 py-2 rounded-md hover:bg-blue-700 transition-colors font-semibold text-sm"
+              className="block text-center bg-[#029281] text-white px-4 py-2 rounded-md hover:bg-blue-700 transition-colors font-semibold text-sm"
             >
               Conocer más
             </a>
@@ -148,62 +148,49 @@ export default function Home() {
   </div>
  </div>
 
-        <div className="max-w-7xl mx-auto px-6 py-20">
-  
+    <section className="max-w-7xl mx-auto px-6 py-20">
   {/* Encabezado */}
-  <div className="text-center max-w-4xl mx-auto">
-    <span className="text-sm text-gray-500 uppercase tracking-wide">
+  <div className="text-center max-w-4xl mx-auto space-y-4">
+    <span className="text-sm uppercase tracking-wide text-[#00225e]">
       Quiénes somos
     </span>
-    <h2 className="mt-2 text-4xl font-bold text-gray-800">
-      Nuestra <span className="text-orange-500">Experiencia</span>
+    <h2 className="text-4xl font-bold text-gray-800">
+      Nuestra <span className="text-[#00225e]">Experiencia</span>
     </h2>
-
-    <p className="mt-6 text-gray-600 leading-relaxed">
-      <strong>Más de 30 años de experiencia</strong> en el desarrollo de aplicaciones para tu negocio.
-      <strong> Más de 200 colaboradores</strong> comprometidos con el éxito de la pequeña, mediana y
-      gran empresa en Colombia. <strong>Más de 15.000 empresas</strong> satisfechas en
+    <p className="text-gray-600 leading-relaxed">
+      <strong>Más de 30 años de experiencia</strong> en el desarrollo de aplicaciones para tu negocio.  
+      <strong> Más de 200 colaboradores</strong> comprometidos con el éxito de la pequeña, mediana y gran empresa en Colombia.  
+      <strong>Más de 15.000 empresas</strong> satisfechas en  
       <strong> más de 200 municipios</strong> a lo largo y ancho del país.
     </p>
   </div>
 
   {/* Contenido inferior */}
   <div className="mt-20 grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
-    
     {/* Texto izquierdo */}
-    <div>
-      <span className="text-sm text-gray-500">
-        Cómo lo hacemos
-      </span>
-      <h3 className="mt-2 text-3xl font-semibold text-gray-800">
-        La mejor <span className="text-orange-500">tecnología</span>
+    <div className="space-y-4">
+      <span className="text-sm text-gray-500">Cómo lo hacemos</span>
+      <h3 className="text-3xl font-semibold text-gray-800">
+        La mejor <span className="text-[#00225e]">tecnología</span>
       </h3>
-
-      <ul className="mt-6 space-y-4 text-gray-600 list-disc list-inside">
-        <li>
-          Aplicaciones 100% web para que operes tu negocio desde Colombia o desde cualquier lugar.
-        </li>
-        <li>
-          Software parametrizable a tus necesidades y procesos.
-        </li>
-        <li>
-          Servicio al cliente comprometido y conocedor. Todos nuestros asesores son colaboradores
-          directos expertamente entrenados.
-        </li>
+      <ul className="list-disc list-inside space-y-2 text-gray-700">
+        <li>Aplicaciones 100% web para que operes tu negocio desde Colombia o desde cualquier lugar.</li>
+        <li>Software parametrizable a tus necesidades y procesos.</li>
+        <li>Servicio al cliente comprometido y conocedor, con asesores directos expertamente entrenados.</li>
       </ul>
     </div>
 
     {/* Imagen derecha */}
-    <div className="relative flex justify-center">
+    <div className="flex justify-center">
       <img
-        src="12rbhp9.jpg"
+        src="/12rbhp9.jpg"
         alt="Plataforma en dispositivos"
-        className="w-full max-w-xl object-contain"
+        className="w-full max-w-xl object-contain rounded-lg shadow-md"
       />
     </div>
-
   </div>
-</div>
+</section>
+
 
 
 
@@ -228,7 +215,7 @@ export default function Home() {
   <div className="max-w-7xl mx-auto px-6">
 
     {/* TÍTULO */}
-    <h2 className="text-center text-3xl font-bold text-orange-500 mb-16">
+    <h2 className="text-center text-3xl font-bold text-[#00225e]-500 mb-16">
       Contáctanos
     </h2>
 
@@ -237,31 +224,31 @@ export default function Home() {
       {/* CARD IZQUIERDA - INFO */}
       <div className="relative">
         <div className="bg-white rounded-2xl shadow-lg p-8 max-w-md">
-          <p className="text-sm text-orange-500 font-semibold mb-2">
+          <p className="text-sm text-[#00225e]-500 font-semibold mb-2">
             Servicio al Cliente:
           </p>
           <p className="text-gray-700 mb-4">+57 (60 4) 604 3120</p>
 
-          <p className="text-sm text-orange-500 font-semibold mb-2">
+          <p className="text-sm text-[#00225e]-500 font-semibold mb-2">
             E-mail:
           </p>
           <p className="text-gray-700 mb-4 underline">
             comercial.matriq360@gmail.com
           </p>
 
-          <p className="text-sm text-orange-500 font-semibold mb-2">
+          <p className="text-sm text-[#00225e]-500 font-semibold mb-2">
             Servicio al Cliente (Colombia):
           </p>
           <p className="text-gray-700 mb-4 underline">
             soporte@matriq360.com
           </p>
 
-          <p className="text-sm text-orange-500 font-semibold mb-2">
+          <p className="text-sm text-[#00225e]-500 font-semibold mb-2">
             WhatsApp Comercial:
           </p>
           <p className="text-gray-700 mb-4">304 385 4956</p>
 
-          <p className="text-sm text-orange-500 font-semibold mb-2">
+          <p className="text-sm text-[#00225e]-500 font-semibold mb-2">
             WhatsApp Servicio al Cliente:
           </p>
           <p className="text-gray-700">310 242 9665</p>
@@ -324,7 +311,7 @@ export default function Home() {
 
           <button
             type="submit"
-            className="w-full rounded-lg bg-orange-500 py-3 text-sm font-semibold text-white hover:bg-orange-600 transition"
+            className="w-full rounded-lg bg-[#029281] py-3 text-sm font-semibold text-white hover:bg-[#029281]/80 transition"
           >
             Enviar
           </button>

@@ -130,7 +130,7 @@ import Dropdown from "@components/ui/Dropdown";
             </Link>
             <Link
               href="/prueba"
-              className="rounded-full bg-blue-600 px-4 py-2 text-sm font-semibold text-white hover:bg-blue-700"
+              className="rounded-full bg-[#029281] px-4 py-2 text-sm font-semibold text-white hover:bg-[#027a6c]"
             >
               Prueba ahora
             </Link>
