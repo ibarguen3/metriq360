@@ -1,6 +1,7 @@
 "use client";
-
+import piedepagina from '@components/ui/piedepagina';
 import Navbar from '@components/ui/navbar';
+import Piedepagina from '@components/ui/piedepagina';
 
 export default function Home() {
   const productos = [
@@ -80,12 +81,12 @@ export default function Home() {
 
   {/* Texto superpuesto */}
   <div className="absolute inset-0 flex flex-col items-center justify-center text-center px-4">
-    <h2 className="text-[#00225e] text-4xl font-bold mb-4 drop-shadow-lg">
+    <h2 className="text-[#029281] text-4xl font-bold mb-4 drop-shadow-lg ">
       Software administrativo y contable de gestión empresarial
     </h2>
-    <p className="text-[#00225e] text-4xl font-bold mb-4 drop-shadow-lg">
+    <p className="text-[#029281] text-4xl font-bold mb-4 drop-shadow-lg">
       Software ágil y robusto{" "}
-      <span className="text-blue-300 font-semibold">
+      <span className="text-[#00225e] -300 font-semibold">
         para hacer{" "}
         <span className="text-[#029281] font-semibold">
           más eficiente tu negocio
@@ -148,7 +149,7 @@ export default function Home() {
   </div>
  </div>
 
-    <section className="max-w-7xl mx-auto px-6 py-20">
+    <section className="max-w-7xl mx-auto px-6 py-20 mt-1 ">
   {/* Encabezado */}
   <div className="text-center max-w-4xl mx-auto space-y-4">
     <span className="text-sm uppercase tracking-wide text-[#00225e]">
@@ -166,7 +167,7 @@ export default function Home() {
   </div>
 
   {/* Contenido inferior */}
-  <div className="mt-20 grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
+  <div className="mt-10 grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
     {/* Texto izquierdo */}
     <div className="space-y-4">
       <span className="text-sm text-gray-500">Cómo lo hacemos</span>
@@ -181,7 +182,7 @@ export default function Home() {
     </div>
 
     {/* Imagen derecha */}
-    <div className="flex justify-center">
+    <div className="flex justify-center ">
       <img
         src="/12rbhp9.jpg"
         alt="Plataforma en dispositivos"
@@ -326,12 +327,11 @@ export default function Home() {
           </p>
         </form>
       </div>
-    </div>
-  </div>
-</section>
-
-
-
+      </div>
+     </div>
+  </section>
+  
+   <Piedepagina/>
 
    </div>
   );
