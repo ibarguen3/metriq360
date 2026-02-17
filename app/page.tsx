@@ -71,28 +71,28 @@ export default function Home() {
     <div>
       <Navbar />
 
-    <section className=" section-hero">
-  {/* Imagen que ocupa todo el ancho */}
-  <img
-    src="image1.1.png"
-    alt="Características del software"
-    className="w-full h-screen object-cover"
-  />
+      <section className=" section-hero">
+      {/* Imagen que ocupa todo el ancho */}
+      <img
+      src="image1.1.png"
+       alt="Características del software"
+       className="w-full h-screen object-cover"
+       />
 
-  {/* Texto superpuesto */}
-  <div className="absolute inset-0 flex flex-col items-center justify-center text-center px-4">
-    <h2 className="text-[#029281] text-4xl font-bold mb-4 drop-shadow-lg ">
-      Software administrativo y contable de gestión empresarial
-    </h2>
-    <p className="text-[#029281] text-4xl font-bold mb-4 drop-shadow-lg">
-      Software ágil y robusto{" "}
-      <span className="text-[#00225e] -300 font-semibold">
-        para hacer{" "}
-        <span className="text-[#029281] font-semibold">
-          más eficiente tu negocio
-        </span>
-      </span>
-    </p>
+         {/* Texto superpuesto */}
+         <div className="absolute inset-0 flex flex-col items-center justify-center text-center px-4">
+         <h2 className="text-[#029281] text-4xl font-bold mb-4 drop-shadow-lg ">
+         Software administrativo y contable de gestión empresarial
+         </h2>
+         <p className="text-[#029281] text-4xl font-bold mb-4 drop-shadow-lg">
+          Software ágil y robusto{" "}
+          <span className="text-[#00225e] -300 font-semibold">
+            para hacer{" "}
+            <span className="text-[#029281] font-semibold">
+              más eficiente tu negocio
+           </span>
+          </span>
+       </p>
   </div>
 </section>
 
@@ -149,9 +149,9 @@ export default function Home() {
   </div>
  </div>
 
-    <section className="max-w-7xl mx-auto px-6 py-20 mt-1 ">
+    <section className="max-w-7xl mx-auto px-6 py-10 mt-1 ">
   {/* Encabezado */}
-  <div className="text-center max-w-4xl mx-auto space-y-4">
+  <div className="  text-center max-w-4xl mx-auto space-y-4">
     <span className="text-sm uppercase tracking-wide text-[#00225e]">
       Quiénes somos
     </span>
@@ -212,7 +212,7 @@ export default function Home() {
     </div>
 
 
-      <section className="bg-white py-20">
+      <section className="bg-gray-100 py-6">
   <div className="max-w-7xl mx-auto px-6">
 
     {/* TÍTULO */}
