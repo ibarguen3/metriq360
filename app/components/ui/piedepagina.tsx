@@ -1,5 +1,8 @@
 "use client";
 
+import { FaFacebookF, FaInstagram, FaLinkedinIn } from "react-icons/fa6";
+
+
 function Piedepagina() {
   return (
     <footer className="bg-white-100 text-white-700 pt-16">
@@ -61,27 +64,26 @@ function Piedepagina() {
 
       {/*  BARRA INFERIOR  */}
 <div className="border-t border-gray-300 py-6 text-center text-xs text-gray-500">
-  <p>
-    © 2026 Metriq 360 S.A.S — Todos los derechos reservados
-  </p>
-  <p className="mt-2">
-    Política de privacidad · Términos y condiciones
-  </p>
+     <p>
+        © 2026 Metriq 360 S.A.S — Todos los derechos reservados
+      </p>
+      <p className="mt-2">
+       Política de privacidad · Términos y condiciones
+      </p>
 
-  {/* Íconos de redes sociales */}
-  <div className="flex justify-center gap-4 mt-4 text-gray-600">
-    <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
-      <i className="fab fa-facebook-f"></i>
-    </a>
-    <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
-      <i className="fab fa-instagram"></i>
-    </a>
-    <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
-      <i className="fab fa-linkedin-in"></i>
-     </a>
-   </div>
- </div>
-
+      {/* Íconos de redes sociales */}
+       <div className="flex justify-center gap-4 mt-4 text-gray-600">
+       <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
+       <FaFacebookF className="text-xl" />
+        </a>
+       <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
+        <FaInstagram className="text-xl" />
+        </a>
+         <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
+           <FaLinkedinIn className="text-xl" />
+        </a>
+      </div>
+   </div>   
 
     </footer>
   );
