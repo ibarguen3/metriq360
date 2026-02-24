@@ -1,5 +1,5 @@
 "use client";
-import piedepagina from '@components/ui/piedepagina';
+
 import Navbar from '@components/ui/navbar';
 import Piedepagina from '@components/ui/piedepagina';
 
