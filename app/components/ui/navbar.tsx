@@ -7,7 +7,7 @@ import Dropdown from "@components/ui/Dropdown";
 
 interface MobileDropdownProps {
   title: string;
-  items: string[];
+  items: { label: string; href: string }[];
   isOpen: boolean;
   onToggle: () => void;
   onItemClick: () => void;
@@ -43,13 +43,13 @@ const MobileDropdown = ({
       >
         <ul className="pl-4 pb-4 space-y-3 text-slate-600">
           {items.map((item) => (
-            <li key={item}>
+            <li key={item.href}>
               <Link
-                href="#"
+                href={item.href}
                 onClick={onItemClick}
                 className="hover:text-blue-600 block"
               >
-                {item}
+                {item.label}
               </Link>
             </li>
           ))}
@@ -115,12 +115,12 @@ const Navbar = () => {
                       </h4>
                       <ul className="space-y-3">
                         {section.items.map((item) => (
-                          <li key={item}>
+                          <li key={item.href}>
                             <Link
-                              href="#"
+                              href={item.href}
                               className="block text-sm text-slate-600 hover:text-blue-600"
                             >
-                              {item}
+                              {item.label}
                             </Link>
                           </li>
                         ))}
@@ -252,6 +252,7 @@ const Navbar = () => {
               <input
                 type="text"
                 placeholder="Buscar..."
+                id ="input-seacrh"
                 className="w-full bg-transparent focus:outline-none text-sm"
               />
             </form>
@@ -307,6 +308,7 @@ const Navbar = () => {
             <input
               type="text"
               placeholder="Buscar..."
+                id="input-search-mobile"
               className="w-full bg-transparent focus:outline-none text-sm"
             />
           </form>
@@ -314,7 +316,7 @@ const Navbar = () => {
           {/* PRODUCTOS */}
           <MobileDropdown
             title="Productos"
-            items={productsMenu.flatMap((section) => section.items)}
+             items={productsMenu.flatMap((section) => section.items)}
             isOpen={activeDropdown === "Productos"}
             onToggle={() =>
               setActiveDropdown(
@@ -328,8 +330,10 @@ const Navbar = () => {
           <MobileDropdown
             title="Contadores"
             items={[
-              "Software para Contadores",
-              "Plan de Contadores y Aliados",
+
+              { label: "Software para Contadores", href: "/software-para-contadores" },
+              { label: "Cursos de Contadores", href: "/cursos-de-contadores" },
+              { label: "Plan de Contadores y Aliados", href: "/plan-de-contadores-y-aliados" },
             ]}
             isOpen={activeDropdown === "Contadores"}
             onToggle={() =>
@@ -343,12 +347,13 @@ const Navbar = () => {
           <MobileDropdown
           title="Comunidad"
           items={[
-               "Promociones",
-               "Plan de Referidos",
-               "Webinars",
-               "Aliados",
-               "Servicios API",
-               "Comunidad Enterprite" 
+            
+               { label: "Promociones", href: "/promociones" },
+               { label: "Plan de Referidos", href: "/plan-de-referidos" },
+               { label: "Webinars", href: "/webinars" },
+               { label: "Aliados", href: "/aliados" },
+               { label: "Servicios API", href: "/servicios-api" },
+               { label: "Comunidad Enterprite", href: "/comunidad-enterprite" }
           ]}
           isOpen={activeDropdown === "Comunidad" }
           onToggle={()=>
@@ -362,14 +367,17 @@ const Navbar = () => {
           <MobileDropdown
              title="Blog"
               items={[
-                "Nómina y Nómina Electrónica",
-                "Facturación Electrónica",
-                "Software Contable",
-                "Régimen Simple",
-                "Sistema POS",
-                "Software de Inventarios",
-                "Software ERP",
-                "Software para hoteles",
+                { label: "Nómina y Nómina Electrónica", href: "/nomina-y-nomina-electronica" },
+                { label: "Cursos de Contabilidad", href: "/cursos-de-contabilidad" },
+                { label: "Facturación Electrónica", href: "/facturacion-electronica" },
+                { label: "Software Contable", href: "/software-contable" },
+                { label: "Régimen Simple", href: "/regimen-simple" },
+                { label: "Sistema POS", href: "/sistema-pos" },
+                { label: "Software de Inventarios", href: "/software-de-inventarios" },
+
+                { label: "Software ERP", href: "/software-erp" },
+                
+                { label: "Software para hoteles", href: "/software-para-hoteles" },
           ]}
           isOpen={activeDropdown === "Blog" }
           onToggle={()=>
