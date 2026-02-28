@@ -1,22 +1,25 @@
+
 "use client";
 
-import { useState } from "react";
 import Link from "next/link";
+
+interface DropdownItem {
+  label: string;
+  href: string;
+}
 
 interface DropdownProps {
   title: string;
-  items: string[];
+  items: DropdownItem[];
 }
 
 const Dropdown = ({ title, items }: DropdownProps) => {
   return (
     <li className="relative group">
-      {/* BOTÓN */}
       <button className="hover:text-blue-600 transition">
         {title}
       </button>
 
-      {/* MENÚ */}
       <ul
         className="
           absolute left-0 top-full mt-3 w-64
@@ -27,12 +30,12 @@ const Dropdown = ({ title, items }: DropdownProps) => {
         "
       >
         {items.map((item) => (
-          <li key={item}>
+          <li key={item.href}>
             <Link
-              href="#"
-              className="block rounded px-3 py-2 text-sm text-slate-600 hover:bg-slate-50 hover:text-blue-600"
+              href={item.href}
+              className="block rounded px-3 py-2 text-sm text-slate-600 hover:bg-slate-50 hover:text-blue-600 transition"
             >
-              {item}
+              {item.label}
             </Link>
           </li>
         ))}

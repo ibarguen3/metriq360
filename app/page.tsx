@@ -15,6 +15,7 @@ export default function Home() {
       ],
       link: "/metrq360-pymes",
     },
+
     {
       nombre: "metrq360 Nómina",
       descripcion: [
@@ -138,20 +139,20 @@ export default function Home() {
             <a
               href={producto.link}
               className="block text-center bg-[#029281] text-white px-4 py-2 rounded-md hover:bg-blue-700 transition-colors font-semibold text-sm"
-            >
+              >
               Conocer más
             </a>
-          </div>
         </div>
-       </div>
-     ))}
-   </div>
+         </div>
+        </div>
+      ))}
+    </div>
   </div>
  </div>
 
     <section className="max-w-7xl mx-auto px-6 py-10 mt-1 ">
   {/* Encabezado */}
-  <div className="  text-center max-w-4xl mx-auto space-y-4">
+  <div className=" text-center max-w-4xl mx-auto space-y-4">
     <span className="text-sm uppercase tracking-wide text-[#00225e]">
       Quiénes somos
     </span>

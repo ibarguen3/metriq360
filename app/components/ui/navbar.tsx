@@ -63,7 +63,7 @@ const Navbar = () => {
   const [mobileOpen, setMobileOpen] = useState(false);
   const [activeDropdown, setActiveDropdown] = useState<string | null>(null);
 
-  /* 🔒 BLOQUEAR SCROLL */
+  /*  BLOQUEAR SCROLL */
   useEffect(() => {
     document.body.style.overflow = mobileOpen ? "hidden" : "auto";
   }, [mobileOpen]);
@@ -106,7 +106,7 @@ const Navbar = () => {
                 Productos
               </span>
 
-              <div className="invisible opacity-0 absolute left-1/2 top-full mt-4 w-[900px] max-h-[70vh] overflow-y-auto -translate-x-1/2 rounded-2xl border bg-white shadow-xl p-8 transition-all duration-200 group-hover:visible group-hover:opacity-100">
+              <div className="invisible absolute top-full max-h-[70vh] overflow-auto opacity-0 rounded-2xl bg-white p-6 shadow-lg group-hover:visible group-hover:opacity-100 transition-opacity duration-300 w-[600px]">
                 <div className="grid grid-cols-3 gap-10">
                   {productsMenu.map((section) => (
                     <div key={section.title}>
@@ -131,13 +131,19 @@ const Navbar = () => {
               </div>
             </li>
 
-            <Dropdown
-              title="Contadores"
-              items={[
-                "Software para Contadores",
-                "Plan de Contadores y Aliados",
-              ]}
-            />
+           <Dropdown
+  title="Contadores"
+  items={[
+    {
+      label: "Software para Contadores",
+      href: "/software-para-contadores",
+    },
+    {
+      label: "Plan de Contadores y Aliados",
+      href: "/plan-contadores",
+    },
+  ]}
+/>
 
             <li>
               <Link href="/servicio-soporte" className="hover:text-blue-600">
@@ -153,33 +159,89 @@ const Navbar = () => {
 
             <Dropdown
               title="Nosotros"
-              items={["Nuestra trayectoria", "Trabaja con nosotros"]}
+              items={[
+                {
+                  label: "Nuestra trayectoria",
+                  href: "/nuestra-trayectoria",
+                },
+                {
+                  label: "Trabaja con nosotros",
+                  href: "/trabaja-con-nosotros",
+                },
+              ]}
             />
 
             <Dropdown
               title="Comunidad"
               items={[
-                "Promociones",
-                "Plan de Referidos",
-                "Webinars",
-                "Aliados",
-                "Servicios API",
-                "Universidad Loggro",
-                "Comunidad Enterprise",
+
+                {
+                  label: "Promociones",
+                  href: "/promociones",
+                },
+                {
+                  label: "Plan de Referidos",
+                  href: "/plan-referidos",
+                },
+                {
+                  label: "Webinars",
+                  href: "/webinars",
+                },
+                {
+                  label: "Aliados",
+                  href: "/aliados",
+                },
+                {
+                  label: "Servicios API",
+                  href: "/servicios-api",
+                },
+                {
+                  label: "Universidad Loggro",
+                  href: "/universidad-loggro",
+                },
+                {
+                  label: "Comunidad Enterprise",
+                  href: "/comunidad-enterprise",
+                },
               ]}
             />
 
             <Dropdown
               title="Blog"
               items={[
-                "Nómina y Nómina Electrónica",
-                "Facturación Electrónica",
-                "Software Contable",
-                "Régimen Simple",
-                "Sistema POS",
-                "Software de Inventarios",
-                "Software ERP",
-                "Software para hoteles",
+
+                {
+                  label: "Nómina y Nómina Electrónica",
+                  href: "/nomina-y-nomina-electronica",
+                },
+                {
+                  label: "Facturación Electrónica",
+                  href: "/facturacion-electronica",
+                },
+                {
+                  label: "Software Contable",
+                  href: "/software-contable",
+                },
+                {
+                  label: "Régimen Simple",
+                  href: "/regimen-simple",
+                },
+                {
+                  label: "Sistema POS",
+                  href: "/sistema-pos",
+                },
+                {
+                  label: "Software de Inventarios",
+                  href: "/software-inventarios",
+                },
+                {
+                  label: "Software ERP",
+                  href: "/software-erp",
+                },
+                {
+                  label: "Software para hoteles",
+                  href: "/software-para-hoteles",
+                },
               ]}
             />
           </ul>
@@ -196,16 +258,17 @@ const Navbar = () => {
           </div>
 
           {/* ACTIONS DESKTOP */}
-          <div className="hidden lg:flex items-center space-x-4 ml-8">
+            <div className="hidden lg:flex items-center space-x-5 ml-8">
             <Link href="/login" className="hover:text-blue-600">
               Ingresar
             </Link>
             <Link
-              href="/registro"
-              className="rounded-full bg-[#029281] px-5 py-2 text-white font-semibold hover:bg-[#027a6c] transition"
-            >
-              Prueba ahora
-            </Link>
+          href="/registro"
+          className=" flex flex-row py-1 px-6 justify-center text-center rounded-full bg-[#029281]  text-base  text-white hover:bg-[#027a6c]"
+          >
+          Prueba ahora
+          </Link>
+
           </div>
 
           {/* MOBILE BUTTON */}
@@ -280,7 +343,7 @@ const Navbar = () => {
           <MobileDropdown
           title="Comunidad"
           items={[
-               "promociones",
+               "Promociones",
                "Plan de Referidos",
                "Webinars",
                "Aliados",
@@ -290,7 +353,7 @@ const Navbar = () => {
           isOpen={activeDropdown === "Comunidad" }
           onToggle={()=>
               setActiveDropdown(
-                activeDropdown === " Comunidad" ? null : " Comunidad"
+                activeDropdown === "Comunidad" ? null : "Comunidad"
               )
           }
              onItemClick={closeMenu}
@@ -308,10 +371,10 @@ const Navbar = () => {
                 "Software ERP",
                 "Software para hoteles",
           ]}
-          isOpen={activeDropdown === "Comunidad" }
+          isOpen={activeDropdown === "Blog" }
           onToggle={()=>
               setActiveDropdown(
-                activeDropdown === " Comunidad" ? null : " Comunidad"
+                activeDropdown === "Blog" ? null : "Blog"
               )
           }
              onItemClick={closeMenu}
