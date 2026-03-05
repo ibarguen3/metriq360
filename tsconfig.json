@@ -20,7 +20,7 @@
       "@/*": ["./*"],
       "@components/*": ["./app/components/*"],
       "@pages/*": ["./app/pages/*"],
-      "@layouts/*": ["app/(dashboard)/layouts/*"],
+      "@layouts/*": ["./app/(dashboard)/layouts/*"],
       "@hooks/*": ["./app/hooks/*"],
       "@lib/*": ["./lib/*"],
       "@styles/*": ["./styles/*"]

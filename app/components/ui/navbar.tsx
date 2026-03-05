@@ -7,7 +7,7 @@ import Dropdown from "@components/ui/Dropdown";
 
 interface MobileDropdownProps {
   title: string;
-  items: { label: string; href: string }[];
+  items: { id: string; label: string; href: string }[];
   isOpen: boolean;
   onToggle: () => void;
   onItemClick: () => void;
@@ -43,7 +43,7 @@ const MobileDropdown = ({
       >
         <ul className="pl-4 pb-4 space-y-3 text-slate-600">
           {items.map((item) => (
-            <li key={item.href}>
+            <li key={item.id}>
               <Link
                 href={item.href}
                 onClick={onItemClick}
@@ -115,7 +115,7 @@ const Navbar = () => {
                       </h4>
                       <ul className="space-y-3">
                         {section.items.map((item) => (
-                          <li key={item.href}>
+                          <li key={item.id}>
                             <Link
                               href={item.href}
                               className="block text-sm text-slate-600 hover:text-blue-600"
@@ -300,7 +300,7 @@ const Navbar = () => {
         <div className="p-6 space-y-6 overflow-y-auto h-full">
           <div className="flex justify-between items-center">
             <span className="font-bold text-lg">Menú</span>
-            <button onClick={closeMenu}>✕</button>
+            <button onClick={closeMenu}>npm✕</button>
           </div>
 
           {/* SEARCH MOBILE */}
@@ -315,10 +315,11 @@ const Navbar = () => {
 
           {/* PRODUCTOS */}
           <MobileDropdown
+            key="Productos"
             title="Productos"
              items={productsMenu.flatMap((section) => section.items)}
-            isOpen={activeDropdown === "Productos"}
-            onToggle={() =>
+             isOpen={activeDropdown === "Productos"}
+              onToggle={() =>
               setActiveDropdown(
                 activeDropdown === "Productos" ? null : "Productos"
               )
@@ -328,12 +329,12 @@ const Navbar = () => {
 
           {/* CONTADORES */}
           <MobileDropdown
+            key="Contadores"
             title="Contadores"
             items={[
-
-              { label: "Software para Contadores", href: "/software-para-contadores" },
-              { label: "Cursos de Contadores", href: "/cursos-de-contadores" },
-              { label: "Plan de Contadores y Aliados", href: "/plan-de-contadores-y-aliados" },
+              { id: "software-contadores", label: "Software para Contadores", href: "/software-para-contadores" },
+              { id: "cursos-contadores", label: "Cursos de Contadores", href: "/cursos-de-contadores" },
+              { id: "plan-contadores-aliados", label: "Plan de Contadores y Aliados", href: "/plan-de-contadores-y-aliados" },
             ]}
             isOpen={activeDropdown === "Contadores"}
             onToggle={() =>
@@ -345,15 +346,16 @@ const Navbar = () => {
           />
 
           <MobileDropdown
+            key="Comunidad"
           title="Comunidad"
           items={[
             
-               { label: "Promociones", href: "/promociones" },
-               { label: "Plan de Referidos", href: "/plan-de-referidos" },
-               { label: "Webinars", href: "/webinars" },
-               { label: "Aliados", href: "/aliados" },
-               { label: "Servicios API", href: "/servicios-api" },
-               { label: "Comunidad Enterprite", href: "/comunidad-enterprite" }
+               { id: "promociones", label: "Promociones", href: "/promociones" },
+               { id: "plan-referidos", label: "Plan de Referidos", href: "/plan-de-referidos" },
+               { id: "webinars", label: "Webinars", href: "/webinars" },
+               { id: "aliados", label: "Aliados", href: "/aliados" },
+               { id: "servicios-api", label: "Servicios API", href: "/servicios-api" },
+               { id: "comunidad-enterprite", label: "Comunidad Enterprite", href: "/comunidad-enterprite" }
           ]}
           isOpen={activeDropdown === "Comunidad" }
           onToggle={()=>
@@ -365,19 +367,19 @@ const Navbar = () => {
           />
 
           <MobileDropdown
+            key="Blog"
              title="Blog"
               items={[
-                { label: "Nómina y Nómina Electrónica", href: "/nomina-y-nomina-electronica" },
-                { label: "Cursos de Contabilidad", href: "/cursos-de-contabilidad" },
-                { label: "Facturación Electrónica", href: "/facturacion-electronica" },
-                { label: "Software Contable", href: "/software-contable" },
-                { label: "Régimen Simple", href: "/regimen-simple" },
-                { label: "Sistema POS", href: "/sistema-pos" },
-                { label: "Software de Inventarios", href: "/software-de-inventarios" },
-
-                { label: "Software ERP", href: "/software-erp" },
+                { id: "nomina-nomina-electronica", label: "Nómina y Nómina Electrónica", href: "/nomina-y-nomina-electronica" },
+                { id: "cursos-contabilidad", label: "Cursos de Contabilidad", href: "/cursos-de-contabilidad" },
+                { id: "facturacion-electronica-blog", label: "Facturación Electrónica", href: "/facturacion-electronica" },
+                { id: "software-contable", label: "Software Contable", href: "/software-contable" },
+                { id: "regimen-simple", label: "Régimen Simple", href: "/regimen-simple" },
+                { id: "sistema-pos-blog", label: "Sistema POS", href: "/sistema-pos" },
+                { id: "software-inventarios", label: "Software de Inventarios", href: "/software-de-inventarios" },
+                { id: "software-erp", label: "Software ERP", href: "/software-erp" },
                 
-                { label: "Software para hoteles", href: "/software-para-hoteles" },
+                { id: "software-hoteles", label: "Software para hoteles", href: "/software-para-hoteles" },
           ]}
           isOpen={activeDropdown === "Blog" }
           onToggle={()=>

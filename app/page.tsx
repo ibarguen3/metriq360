@@ -193,9 +193,6 @@ export default function Home() {
   </div>
 </section>
 
-
-
-
   <div className=' my-12 px-4'>
     <div className=" carousel slide relative" data-te-carousel-init data-te-carousel-slide>
   <div className="relative w-full overflow-hidden">
@@ -203,134 +200,14 @@ export default function Home() {
       <img src="/img1.jpg" className="block w-full" />
     </div>
     <div className="hidden" data-te-carousel-item>
-      <img src="/img2.jpg" className="block w-full" />
+        <img src="/img2.jpg" className="block w-full" />
     </div>
   </div>
-  <button data-te-slide="prev">‹</button>
-  <button data-te-slide="next">›</button>
-</div>
-
+     <button data-te-slide="prev">‹</button>
+    <button data-te-slide="next">›</button>
     </div>
-
-
-      <section className="bg-gray-100 py-6">
-  <div className="max-w-7xl mx-auto px-6">
-
-    {/* TÍTULO */}
-    <h2 className="text-center text-3xl font-bold text-[#00225e]-500 mb-16">
-      Contáctanos
-    </h2>
-
-    <div className="relative grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
-
-      {/* CARD IZQUIERDA - INFO */}
-      <div className="relative">
-        <div className="bg-white rounded-2xl shadow-lg p-8 max-w-md">
-          <p className="text-sm text-[#00225e]-500 font-semibold mb-2">
-            Servicio al Cliente:
-          </p>
-          <p className="text-gray-700 mb-4">+57 (60 4) 604 3120</p>
-
-          <p className="text-sm text-[#00225e]-500 font-semibold mb-2">
-            E-mail:
-          </p>
-          <p className="text-gray-700 mb-4 underline">
-            comercial.matriq360@gmail.com
-          </p>
-
-          <p className="text-sm text-[#00225e]-500 font-semibold mb-2">
-            Servicio al Cliente (Colombia):
-          </p>
-          <p className="text-gray-700 mb-4 underline">
-            soporte@matriq360.com
-          </p>
-
-          <p className="text-sm text-[#00225e]-500 font-semibold mb-2">
-            WhatsApp Comercial:
-          </p>
-          <p className="text-gray-700 mb-4">304 385 4956</p>
-
-          <p className="text-sm text-[#00225e]-500 font-semibold mb-2">
-            WhatsApp Servicio al Cliente:
-          </p>
-          <p className="text-gray-700">310 242 9665</p>
-        </div>
-
-        {/* PERSONA DECORATIVA */}
-        <img
-          src="/persona.png"
-          alt="Asesor"
-          className="absolute -bottom-24 -left-10 w-56 hidden lg:block"
-        />
-      </div>
-
-      {/* CARD DERECHA - FORM */}
-      <div className="bg-white rounded-2xl shadow-lg p-10 max-w-md mx-auto w-full">
-
-        <form className="space-y-4">
-          <input
-            type="text"
-            placeholder="* Nombre completo"
-            className="w-full rounded-lg border px-4 py-3 text-sm focus:ring-2 focus:ring-orange-500"
-          />
-
-          <input
-            type="email"
-            placeholder="* Correo electrónico"
-            className="w-full rounded-lg border px-4 py-3 text-sm focus:ring-2 focus:ring-orange-500"
-          />
-
-          {/* TELÉFONO */}
-          <div className="flex gap-2">
-            <div className="flex items-center gap-2 border rounded-lg px-3 text-sm">
-              🇨🇴 <span className="text-gray-500">+57</span>
-            </div>
-            <input
-              type="tel"
-              placeholder="Teléfono"
-              className="flex-1 rounded-lg border px-4 py-3 text-sm focus:ring-2 focus:ring-orange-500"
-            />
-          </div>
-
-          <input
-            type="text"
-            placeholder="* Nombre empresa"
-            className="w-full rounded-lg border px-4 py-3 text-sm focus:ring-2 focus:ring-orange-500"
-          />
-
-          <select
-            defaultValue=""
-            className="w-full rounded-lg border px-4 py-3 text-sm text-gray-500 focus:ring-2 focus:ring-orange-500"
-          >
-            <option value="" disabled>
-              * Tipo de empresa
-            </option>
-            <option>Pequeña empresa</option>
-            <option>Mediana empresa</option>
-            <option>Gran empresa</option>
-            <option>Startup</option>
-          </select>
-
-          <button
-            type="submit"
-            className="w-full rounded-lg bg-[#029281] py-3 text-sm font-semibold text-white hover:bg-[#029281]/80 transition"
-          >
-            Enviar
-          </button>
-
-          <p className="text-[11px] text-center text-gray-500 mt-4 leading-snug">
-            Al enviar su información, autoriza a Matriq360 a tratar sus datos
-            personales conforme a nuestra{" "}
-            <span className="text-orange-500 underline cursor-pointer">
-              Política de Privacidad
-            </span>
-            .
-          </p>
-        </form>
-      </div>
-      </div>
-     </div>
-  </section>
+</div>
+    
   
    <Piedepagina/>
 
