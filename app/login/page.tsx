@@ -67,7 +67,7 @@ export default function LoginPage() {
 
             <div>
               <label htmlFor="password" className="block mb-2 text-sm">
-                Contraseña
+                contraseña
               </label>
               <div className="relative">
                 <Lock className="absolute left-3 top-1/2 -translate-y-1/2 w-5 h-5 text-muted-foreground" />
@@ -91,7 +91,7 @@ export default function LoginPage() {
         </div>
 
         <div className="mt-8 text-center text-white/70 text-sm">
-          © 2025 METRIQ 360. Todos los derechos reservados.
+          © 2025 METRIQ 360. Todos los derechos reservados...
         </div>
       </div>
     </div>

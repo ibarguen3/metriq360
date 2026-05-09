@@ -85,70 +85,70 @@ export default function PlanesPrecio2026() {
       <a href="#">
       Software Administrativo y Contable
      </a>
-     </li>
+       </li>
 
-       <li className="cursor-pointer px-6 py-2 rounded-md bg-gray-100 text-gray-700 hover:bg-[#00225e] hover:text-white transition">
-        <a href="#">
-        Nómina
-              </a>
-         </li>
-        </ul>
+        <li className="cursor-pointer px-6 py-2 rounded-md bg-gray-100 text-gray-700 hover:bg-[#00225e] hover:text-white transition">
+          <a href="#">
+          Nómina
+                </a>
+          </li>
+          </ul>
 
-        <div className="mt-8">
-          <div className="max-w-sm bg-white rounded-xl shadow-md p-6 relative border">
+    <div className="mt-8">
+      <div className="max-w-sm bg-white rounded-xl shadow-md p-6 relative border">
 
-  {/* BADGE */}
-  <span className="absolute -top-3 left-6 bg-cyan-600 text-white text-xs px-3 py-1 rounded-md font-semibold">
-    ACTUALIZADO 2026
-  </span>
+         {/* BADGE */}
+          <span className="absolute -top-3 left-6 bg-cyan-600 text-white text-xs px-3 py-1 rounded-md font-semibold">
+          ACTUALIZADO 2026
+         </span>
 
-  {/* TITULO */}
-  <h3 className="text-xl font-bold text-[#00225e] mt-4">
-    POS Tienda
-  </h3>
+         {/* TITULO */}
+         <h3 className="text-xl font-bold text-[#00225e] mt-4">
+        POS Tienda
+        </h3>
 
-  <p className="text-gray-500 text-sm mt-1">
-    Plan Básico y económico para los que buscan cumplir con la DIAN
-  </p>
+      <p className="text-gray-500 text-sm mt-1">
+      Plan Básico y económico para los que buscan cumplir con la DIAN
+      </p>
 
-     {/* PRECIO */}
-    <div className="mt-4">
-      <p className="text-3xl font-bold text-[#00225e]">
-        $54.990 <span className="text-sm font-normal text-gray-500">/ mes</span>
-        </p>
-      <p className="text-gray-500 text-sm">
-        $659.880 / año
-        </p>
-      </div>
-       {/* BOTON */}
-        <button className="mt-4 bg-[#00225e] text-white px-6 py-2 rounded-lg hover:bg-blue-900 transition">
-        Comprar
-      </button>
-      {/* DIVISOR */}
-      <hr className="my-6 border-dashed" />
-       {/* CARACTERISTICAS */}
-      <h4 className="font-semibold text-[#00225e] mb-3">
-          Características
-        </h4>
-        <ul className="space-y-2 text-sm text-gray-700">
-        <li>✔ Facturas electrónicas: <b>350 FE</b> (ILIMITADA OPCIONAL)</li>
-      <li>✔ 1 Usuario</li>
-      <li>✔ 1 Caja</li>
-      <li>✔ POS Electrónico (Con Facturación Electrónica)</li>
-      <li>✔ Soporte completo (correo, chat, whatsapp y atención telefónica personalizada)</li>
-      <li>✔ Implantación personalizada</li>
-      <li>✔ Manejo de caja y medios de pago</li>
-      <li>
-        ✔ Manejo de inventarios 
-        <span className="line-through text-gray-400">300 items</span> 
-        <span className="text-red-500 font-semibold">ILIMITADOS POR LANZAMIENTO</span>
-      </li>
-      <li>✔ App móvil</li>
-    </ul>
+      {/* PRECIO */}
+      <div className="mt-4">
+        <p className="text-3xl font-bold text-[#00225e]">
+          $54.990 <span className="text-sm font-normal text-gray-500">/ mes</span>
+          </p>
+        <p className="text-gray-500 text-sm">
+          $659.880 / año
+          </p>
+        </div>
+        {/* BOTON */}
+          <button className="mt-4 bg-[#00225e] text-white px-6 py-2 rounded-lg hover:bg-blue-900 transition">
+          Comprar
+        </button>
+        {/* DIVISOR */}
+        <hr className="my-6 border-dashed" />
+        {/* CARACTERISTICAS */}
+        <h4 className="font-semibold text-[#00225e] mb-3">
+            Características
+          </h4>
+          <ul className="space-y-2 text-sm text-gray-700">
+          <li>✔ Facturas electrónicas: <b>350 FE</b> (ILIMITADA OPCIONAL)</li>
+        <li>✔ 1 Usuario</li>
+        <li>✔ 1 Caja</li>
+        <li>✔ POS Electrónico (Con Facturación Electrónica)</li>
+        <li>✔ Soporte completo (correo, chat, whatsapp y atención telefónica personalizada)</li>
+        <li>✔ Implantación personalizada</li>
+        <li>✔ Manejo de caja y medios de pago</li>
+        <li>
+          ✔ Manejo de inventarios 
+          <span className="line-through text-gray-400">300 items</span> 
+          <span className="text-red-500 font-semibold">ILIMITADOS POR LANZAMIENTO</span>
+        </li>
+        <li>✔ App móvil</li>
+      </ul>
     
 
-</div>
-        </div>
+      </div>
+   </div>
 
             </div>
           </section>
